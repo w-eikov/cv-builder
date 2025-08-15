@@ -3,6 +3,8 @@
 This CV builder is written with **Python**, **Flask**, **HTML**, and **Jinja2**.  
 It was built as part of work experience from **Pathbuddy**.
 
+## Requirements
+* Python Flask must be installed
 ## How to Use
 
 1. Run `app.py` through your preferred code editor or terminal:
