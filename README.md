@@ -5,6 +5,8 @@ It was built as part of work experience from **Pathbuddy**.
 
 ## Requirements
 * Python Flask must be installed
+* Python pdfkit must be installed
+* wkhtmltopdf must be installed (https://wkhtmltopdf.org/downloads.html)
 ## How to Use
 
 1. Run `app.py` through your preferred code editor or terminal:
