@@ -5,7 +5,8 @@
 </head>
 
 <body>
-    <form method="POST">
+    <!-- Preview Form -->
+    <form method="POST" action="/preview-cv" target="_blank">
         <label>Name:</label>
         <input type="text" name="name" required><br>
 
@@ -33,7 +34,40 @@
         <label>Goals (comma-separated):</label>
         <input type="text" name="goals"><br>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Preview CV</button>
     </form>
+
+    <br>
+
+    <!-- Download Form -->
+    <form method="POST" action="/download-cv">
+        <!-- hidden fields will be populated via JavaScript before submitting -->
+        <input type="hidden" name="name" id="name">
+        <input type="hidden" name="email" id="email">
+        <input type="hidden" name="phone" id="phone">
+        <input type="hidden" name="skills" id="skills">
+        <input type="hidden" name="experience" id="experience">
+        <input type="hidden" name="interests" id="interests">
+        <input type="hidden" name="goals" id="goals">
+
+        <button type="submit" onclick="populateDownloadFields()">Download PDF</button>
+    </form>
+
+    <script>
+        function populateDownloadFields() {
+            // Copy values from input fields in the first form to hidden fields in the download form
+            document.getElementById('name').value = document.querySelector('input[name="name"]').value;
+            document.getElementById('email').value = document.querySelector('input[name="email"]').value;
+            document.getElementById('phone').value = document.querySelector('input[name="phone"]').value;
+            document.getElementById('skills').value = document.querySelector('input[name="skills"]').value;
+            
+            // Combine multiple experience fields into one string, separated by newlines
+            const experiences = Array.from(document.querySelectorAll('textarea[name="experience"]')).map(t => t.value).join("\n\n");
+            document.getElementById('experience').value = experiences;
+
+            document.getElementById('interests').value = document.querySelector('textarea[name="interests"]').value;
+            document.getElementById('goals').value = document.querySelector('input[name="goals"]').value;
+        }
+    </script>
 </body>
 </html>
