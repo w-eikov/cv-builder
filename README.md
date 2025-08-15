@@ -25,3 +25,4 @@ http://127.0.0.1:5000/form
 * Dynamic CV generation using Jinja2 templates
 * Input fields for personal details, skills and work experience
 * Create a styled CV page in your browser
+* Download a styled CV PDF onto your computer
