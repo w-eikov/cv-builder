@@ -1,6 +1,6 @@
 # Pathbuddy CV Builder
 
-This CV builder is written with **Python**, **Flask**, **JavaScript**, **HTML**, and **Jinja2**.  
+This CV builder is written with **Python**, **Flask**, **JavaScript**, **HTML**, **Jinja2**, and **CSS**.  
 It was built as part of work experience from **Pathbuddy**.
 
 ## Requirements
@@ -26,3 +26,8 @@ http://127.0.0.1:5000/form
 * Input fields for personal details, skills and work experience
 * Create a styled CV page in your browser
 * Download a styled CV PDF onto your computer
+
+## Credits
+* Adeeb Haidari
+* Patrik Sandu
+* Tinron Chan
