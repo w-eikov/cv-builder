@@ -16,9 +16,6 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/styles.css')
-def styles():
-    return send_from_directory('static', '/styles.css')
 
 
 @app.route("/form", methods=["GET", "POST"])
@@ -95,7 +92,13 @@ def download_cv():
     with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmpfile:
         pdf_file_path = tmpfile.name
 
-    pdfkit.from_string(rendered, pdf_file_path, configuration=pdf_config)
+    pdfkit.from_string(
+        rendered,
+        pdf_file_path,
+        configuration=pdf_config,
+        options={"enable-local-file-access": ""}
+    )
+
 
     response = send_file(pdf_file_path, as_attachment=True)
 
@@ -124,7 +127,13 @@ def download_coverletter():
     with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmpfile:
         pdf_file_path = tmpfile.name
 
-    pdfkit.from_string(rendered, pdf_file_path, configuration=pdf_config)
+    pdfkit.from_string(
+        rendered,
+        pdf_file_path,
+        configuration=pdf_config,
+        options={"enable-local-file-access": ""}
+    )
+
 
     response = send_file(pdf_file_path, as_attachment=True)
 
