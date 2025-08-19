@@ -11,6 +11,10 @@ pdf_config = pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_PATH)
 
 
 # ---------------- CV ROUTES ----------------
+@app.route("/")
+def index():
+    return render_template("index.html")
+
 
 @app.route('/styles.css')
 def styles():
