@@ -9,6 +9,10 @@ app = Flask(__name__)
 WKHTMLTOPDF_PATH = r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
 pdf_config = pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_PATH)
 
+@app.route("/")
+def index():
+    return render_template("index.html")
+
 @app.route("/form", methods=["GET", "POST"])
 def form():
     if request.method == "POST":
