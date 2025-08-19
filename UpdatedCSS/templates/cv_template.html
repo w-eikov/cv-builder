@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My CV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles.css') }}">
+</head>
+
+<body id="cv-template">
+    <div id="cv-details">
+
+        <div class="cv-section">
+            <h3>Personal Details:</h3>
+            <ul>
+                <li><strong>Name:</strong> {{ name }}</li>
+                <li><strong>Phone:</strong> {{ phone }}</li>
+                <li><strong>Email:</strong> <a href="mailto:{{ email }}">{{ email }}</a></li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h3>Skills:</h3>
+            <ul>
+                {% for skill in skills %}
+                    <li>{{ skill }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h3>Experience:</h3>
+            <ul>
+                {% for exp in experiences %}
+                    <li>{{ exp }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h3>Interests:</h3>
+            <p>{{ interests }}</p>
+        </div>
+
+        <div class="cv-section">
+            <h3>Goals:</h3>
+            <ul>
+                {% for goal in goals %}
+                    <li>{{ goal }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
