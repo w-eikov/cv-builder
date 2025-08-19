@@ -15,10 +15,6 @@ It was built as part of work experience from **Pathbuddy**.
 python app.py
 ```
 2. Open the link that appears in the terminal (usually http://127.0.0.1:5000).
-3. Navigate to the form page by changing the URL to:
-``` bash
-http://127.0.0.1:5000/form
-```
 4. Fill in your details, submit the form, and view your generated CV.
 
 ## Features
@@ -28,6 +24,6 @@ http://127.0.0.1:5000/form
 * Download a styled CV PDF onto your computer
 
 ## Credits
-* Adeeb Haidari
-* Patrik Sandu
-* Tinron Chan
+* Adeeb Haidari (<19haidaa@student.handsworth.bham.sch.uk>, github: https://github.com/Link101010)
+* Patrik Sandu (<19sandua@student.handsworth.bham.sch.uk> github: https://github.com/LudwigV7)
+* Tinron Chan (<19chant@student.handsworth.bham.sch.uk> github: https://github.com/w-eikov)
