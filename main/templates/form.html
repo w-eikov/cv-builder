@@ -10,13 +10,19 @@
 
     <nav>
         <div class="logo"><a href="index.html">CV Generator</a></div>
-
+        
+        <!--
         <ul class="nav-links">
             <li><a href="">Contact</a></li>
-        </ul>
+        </ul>-->
     </nav>
 
+    <video autoplay muted loop id='index-video' class='video'>
+        <source src='{{ url_for('static', filename='nature_vid.mp4') }}' type='video/mp4'>
+    </video>
+
     <div id='main-page'>
+
 
         <div id='main-page-items'>
 
@@ -143,11 +149,11 @@
             </div>
             <div>
                 <img src="{{ url_for('static', filename='linkedin-logo.png') }}" alt="LinkedIn">
-                <a href="#">Tinron Chan</a>
+                <a href="https://www.linkedin.com/in/beas-tinron?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Tinron Chan</a>
             </div>
             <div>
                 <img src="{{ url_for('static', filename='linkedin-logo.png') }}" alt="LinkedIn">
-                <a href="#">Alexandru Patrick Sandhu</a>
+                <a href="https://www.linkedin.com/in/sandu-patrik-89346630a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Alexandru Patrick Sandhu</a>
             </div>
             <div>
                 <img src="{{ url_for('static', filename='github-logo.png') }}" alt="GitHub">
