@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, send_file, send_from_directory
+from flask import Flask, request, render_template, send_file
 import pdfkit
 import tempfile
 import os
@@ -15,8 +15,9 @@ pdf_config = pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_PATH)
 def index():
     return render_template("index.html")
 
-
-
+@app.route("/index.html")
+def go_back_to_index():
+    return render_template("/index.html")
 
 @app.route("/form", methods=["GET", "POST"])
 def form():

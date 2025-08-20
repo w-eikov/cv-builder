@@ -10,16 +10,47 @@
 </head>
 
 <body id='index-body'>
-    <video autoplay muted loop id='index-video'>
+    <video autoplay muted loop id='index-video' class='video'>
         <source src='{{ url_for('static', filename='nature_vid.mp4') }}' type='video/mp4'>
     </video>
 
-    
-    <div id='index-contents'>
-        <h1>Pathbuddy CV Builder</h1>
-            <h2>This site was built as part of a work experience with Pathbuddy</h2>
-            <a href="/form" title="Go to CV builder" class="redirect"><i id='index-button' class="fa-solid fa-circle-play"></i></a>
-    </div>
+    <main>
+        <div id='index-contents'>
+            <h1>Pathbuddy CV Builder</h1>
+                <h2>This site was built as part of a work experience with Pathbuddy</h2>
+                <a href="/form" title="Go to CV builder" class="redirect"><i id='index-button' class="fa-solid fa-circle-play"></i></a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <div>
+                <img src="{{ url_for('static', filename='linkedin-logo.png') }}" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/adeeb-haidari-4607b0326" target="_blank">Adeeb Haidari</a>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='linkedin-logo.png') }}" alt="LinkedIn">
+                <a href="#">Tinron Chan</a>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='linkedin-logo.png') }}" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/sandu-patrik-89346630a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Alexandru Patrick Sandhu</a>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='github-logo.png') }}" alt="GitHub">
+                <a href="https://github.com/Link101010" target="_blank">Adeeb Haidari</a>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='github-logo.png') }}" alt="GitHub">
+                <a href="https://github.com/w-eikov" target="_blank">Tinron Chan</a>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='github-logo.png') }}" alt="GitHub">
+                <a href="https://github.com/LudwigV7" target="_blank">Alexandru Patrick Sandhu</a>
+            </div>
+        </div>
+    </footer>
+
     
 </body>
 
