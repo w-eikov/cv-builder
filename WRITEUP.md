@@ -1,0 +1,7 @@
+# Pathbuddy WEX: CV builder
+## Final Writeup
+We have successfully built a working CV/Cover Letter builder using a **Python Flask, HTML Jinja2, JavaScript and CSS**. This web-hosted CV builder allows for a user to generate/download CVs and Cover Letters with minimal effort and ease of access.
+
+ Taking into consideration a user’s needs and wants, we have successfully implemented **OpenAI’s API** in generating a personalised Cover Letter, using a user’s information that they have provided. Furthermore, we have decided to only use **OpenAI’s API** in generating a Cover Letter, specifically NOT in generating a CV, since they are formulaic, only providing a bare-bones list of qualifications, achievements, etc… Generative AI would be much more suited for the narrative-led and expressive cover letter that would be used to demonstrate personality, motivation and other qualitative data. 
+
+To demonstrate utmost convenience to the user, we have also allowed for the program to export generated CVs and Cover Letters as **PDFs** (Cover Letters can also be downloaded as **Word Documents**, suitable since they are articulately written and are highly personalised), allowing users to download and send them to their future employers.
