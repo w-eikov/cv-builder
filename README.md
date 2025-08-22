@@ -23,13 +23,17 @@ It was built as part of work experience from **Pathbuddy**.
 *  wkhtmltopdf must be installed (https://wkhtmltopdf.org/downloads.html)
 ## How to Use
 
-1. Run `app.py` through your preferred code editor or terminal:
+1. Open 'app.py' with your preferred code editor or terminal and insert your API key in 'openai.api_key = ""'
+
+2. Run `app.py` through your preferred code editor or terminal:
 
 ```bash
 python app.py
 ```
-2. Open the link that appears in the terminal (usually http://127.0.0.1:5000).
+3. Open the link that appears in the terminal (usually http://127.0.0.1:5000).
 4. Fill in your details, submit the form, and preview/download your generated CV/Cover Letter.
+
+Note: Getting the AI improved cover letters may take a few seconds.
 
 ## Features
 * Dynamic CV generation using Jinja2 templates
