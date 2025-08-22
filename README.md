@@ -21,10 +21,11 @@ python app.py
 * Dynamic CV generation using Jinja2 templates
 * Input fields for personal details, skills and work experience
 * Create a styled CV page in your browser
-* Download a styled CV PDF onto your computer
+* Download a styled CV PDF onto your computer (.pdf)
 * Dynamic Cover Letter generation using Jinja2 templates
+* OpenAI implementation to help further personalise Cover Letters
 * Create a styled Cover Letter page in your browser
-* Download a styled Cover Letter page onto your computer
+* Download a styled Cover Letter page onto your computer (.docx)
 
 ## Credits
 * Adeeb Haidari (<19haidaa@student.handsworth.bham.sch.uk>, github: https://github.com/Link101010)
