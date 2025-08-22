@@ -43,7 +43,7 @@ Note: Getting the AI improved cover letters may take a few seconds.
 * Dynamic Cover Letter generation using Jinja2 templates
 * OpenAI implementation to help further personalise Cover Letters
 * Create a styled Cover Letter page in your browser
-* Download a styled Cover Letter page onto your computer (.docx)
+* Download a styled Cover Letter page onto your computer (.docx or .pdf)
 
 ## Credits
 * Adeeb Haidari (<19haidaa@student.handsworth.bham.sch.uk>, github: https://github.com/Link101010)
