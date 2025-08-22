@@ -5,8 +5,18 @@ It was built as part of work experience from **Pathbuddy**.
 
 ## Requirements
 * Python Flask must be installed
+  ```bash
+  pip install flask
+  ```
 * Python pdfkit must be installed
-* wkhtmltopdf must be installed (https://wkhtmltopdf.org/downloads.html)
+  ```bash
+  pip install pdfkit
+  ```
+* OpenAI must be installed
+  ```bash
+  pip install openai
+  ```
+*  wkhtmltopdf must be installed (https://wkhtmltopdf.org/downloads.html)
 ## How to Use
 
 1. Run `app.py` through your preferred code editor or terminal:
@@ -15,7 +25,7 @@ It was built as part of work experience from **Pathbuddy**.
 python app.py
 ```
 2. Open the link that appears in the terminal (usually http://127.0.0.1:5000).
-4. Fill in your details, submit the form, and view your generated CV.
+4. Fill in your details, submit the form, and preview/download your generated CV/Cover Letter.
 
 ## Features
 * Dynamic CV generation using Jinja2 templates
