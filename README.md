@@ -16,6 +16,10 @@ It was built as part of work experience from **Pathbuddy**.
   ```bash
   pip install openai
   ```
+* python-docx must be installed
+  ```bash
+  pip install python-docx
+  ```
 *  wkhtmltopdf must be installed (https://wkhtmltopdf.org/downloads.html)
 ## How to Use
 
