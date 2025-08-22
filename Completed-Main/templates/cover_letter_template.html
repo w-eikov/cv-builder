@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles.css') }}">
+    <meta charset="UTF-8">
+    <title>Cover Letter</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            font-size: 12pt;
+            line-height: 1.5;
+            margin: 1in;
+        }
+        .top-right {
+            text-align: right;
+        }
+        .signature {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--  Top Right Corner (Your Info) -->
+    <div class="top-right">
+        <p>
+            {{ cl_your_name }}<br>
+            {{ cl_your_address }}<br>
+            {{ cl_your_phone }}<br>
+            {{ cl_your_email }}
+        </p>
+    </div>
+
+    <br><br><br>
+
+    <!--  Recruiter Info -->
+    <p>
+        {{ cl_recruiter_name }}<br>
+        {{ cl_recruiter_title }}<br>
+        {{ cl_bank_name }}<br>
+        {{ cl_recruiter_address }}
+    </p>
+
+    <br><br><br>
+
+    <!--  Greeting -->
+    <p>Dear {{ cl_greeting }},</p>
+
+    <!--  Paragraph 1 -->
+    <p>
+        My name is {{ cl_your_name }} and I am currently {{ cl_status }} at {{ cl_school_or_company }}{% if cl_division %}, in {{ cl_division }}{% endif %}.
+        I was recently introduced to your firm via {{ cl_intro_source }} and was impressed with {{ cl_impressed_by }}.
+        I am interested in pursuing a {{ cl_position }} position at your firm, and have enclosed my resume and background information below.
+    </p>
+
+    <!--  Paragraph 2 -->
+    <p>
+        I have previously {{ cl_experience }}. Through this experience {{ cl_learnings }}, I have gained {{ cl_other_skills }}.
+        I also had the opportunity to work on {{ cl_project }}, which {{ cl_project_results }}.
+    </p>
+
+    <!--  Paragraph 3 -->
+    <p>
+        Given my background in {{ cl_summary_experience }} and my {{ cl_summary_skills }} skills, I am a particularly good fit for the {{ cl_position_name }} position at your firm.
+        I am impressed by your track record of {{ cl_firm_track_record }} at {{ cl_firm_name }} and the significant responsibilities given to {{ cl_position_name }},
+        and I look forward to joining and contributing to your firm.
+    </p>
+
+    <!--  Closing -->
+    <p>
+        A copy of my resume is enclosed for your reference. I would welcome an opportunity to discuss my qualifications with you and learn more about {{ cl_firm_name }}
+        at your earliest convenience. I can be reached at {{ cl_closing_phone }} or via email at {{ cl_closing_email }}.
+        Thank you very much for your time and consideration.
+    </p>
+
+    <!--  Signature -->
+    <p class="signature">
+        Sincerely,<br><br>
+        {{ cl_signature }}
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Improved Cover Letter</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            font-size: 12pt;
+            line-height: 1.5;
+            margin: 1in;
+        }
+        .top-right {
+            text-align: right;
+        }
+        .signature {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Applicant Info (Top Right, stacked) -->
+    <div class="top-right">
+        <p>{{ client_info|safe }}</p>
+    </div>
+
+    <br><br><br>
+
+    <!--  Recruiter Info (Left side, stacked) -->
+    <p>{{ recruiter_info|safe }}</p>
+
+    <br><br><br>
+
+    <!--  Greeting -->
+    <p>Dear {{ greeting|safe }},</p>
+
+    <!--  Body (AI polished 4 paragraphs) -->
+    <p>{{ body|safe }}</p>
+
+    <!--  Closing -->
+    <p class="signature">{{ closing|safe }}</p>
+
+</body>
+</html>
